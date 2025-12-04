@@ -92,6 +92,22 @@ export function AudioProvider({ children }) {
       {
         setMuted(false);
       }
+      if (prevWindVolume !== 0)
+      {
+        setWindVolume(prevWindVolume);
+      }
+      if (prevFireVolume !== 0)
+      {
+        setFireVolume(prevFireVolume);
+      }
+      if (prevRainVolume !== 0)
+      {
+        setRainVolume(prevRainVolume);
+      }
+      if (prevWaveVolume !== 0)
+      {
+        setWaveVolume(prevWaveVolume);
+      }
     } else if (finalVolume === 0) {
       sound.stop();
     } else {
